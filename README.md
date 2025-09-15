@@ -83,20 +83,18 @@ MODEL=gpt-3.5-turbo
 
 ---
 
-## 📡 API Endpoints Tech Stack
-- Python 3.10+
-- FastAPI + Uvicorn
-- Pydantic for validation
-- OpenAI Chat Completions API
-
----
-
-## 📂 Project Structure
-
-
-
-
 ## 📡 API Endpoints
+
+### `/chat`  
+Qualifies conversation input with fallback rules.
+
+**Request:**
+```json
+{
+  "messages": [
+    {"role": "user", "content": "Hi, I need life insurance in CA. My budget is $120."}
+  ]
+}
 
 /chat
 
