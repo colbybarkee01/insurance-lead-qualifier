@@ -70,18 +70,25 @@ uvicorn app.main:app --reload
 
 👉 Docs available at: http://127.0.0.1:8000/docs
 
-🔑 Environment Variables
-------------------------
-
-Create a `.env` file (copy from `.env.example`) and set the following:
 
 ## 🔑 Environment Variables
-
 Create a .env file (copy from .env.example) and set:
 
 OPENAI_API_KEY=sk-...
 
 MODEL=gpt-3.5-turbo
+
+---
+
+## 📡 API Endpoints Tech Stack
+- Python 3.10+
+- FastAPI + Uvicorn
+- Pydantic for validation
+- OpenAI Chat Completions API
+
+---
+
+## 📂 Project Structure
 
 
 
