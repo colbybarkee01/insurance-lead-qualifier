@@ -177,11 +177,33 @@ Response:
 
 
 
+💼 About / Portfolio Notes
+
+This project demonstrates practical AI-assisted automation in insurance sales:
+
+- Problem: Agents waste time on unqualified leads.
+
+- Solution: A lightweight chatbot that gathers structured customer info (age, state, coverage type, budget), applies a scoring heuristic, and pushes qualified leads to a CRM.
+
+- Outcome: Sales teams can focus on high-value prospects instead of manually filtering leads.
+
+- Next Steps: Connect to real CRMs (HubSpot, Salesforce), add retrieval-augmented generation (RAG) for plan-specific FAQs, and enhance lead scoring with machine learning.
+
+This repo serves as a portfolio-ready demo showcasing:
+
+- API design with FastAPI
+
+- Real-world AI integrations with OpenAI
+
+- CRM-friendly JSON workflows
+
+- Deployment-ready structure
+
+
 
 📜 License
 
 MIT License – free to use, modify, and share.
-
 
 
 
