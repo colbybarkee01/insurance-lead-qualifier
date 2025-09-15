@@ -59,35 +59,37 @@ insurance-lead-qualifier/
 
 ⚙️ Setup & Run
 
-Clone the repository:
+1. Clone the repository:
 
 git clone https://github.com/colbybarkee01/insurance-lead-qualifier.git
 cd insurance-lead-qualifier
 
 
-Create and activate a virtual environment:
+2. Create and activate a virtual environment:
 
 python -m venv .venv
+
 source .venv/bin/activate   # Mac/Linux
+
 .venv\Scripts\activate      # Windows
 
 
 
 
-Install dependencies:
+3. Install dependencies:
 
 pip install -r requirements.txt
 
 
 
 
-Set up environment:
+4. Set up environment:
 
 cp .env.example .env
 
 
 
-Run the server:
+5. Run the server:
 
 uvicorn app.main:app --reload
 
@@ -95,7 +97,7 @@ uvicorn app.main:app --reload
 
 
 
-Access interactive docs at:
+6. Access interactive docs at:
 
 👉 http://127.0.0.1:8000/docs
 
@@ -108,6 +110,7 @@ Access interactive docs at:
 Create a .env file (copy from .env.example) and set:
 
 OPENAI_API_KEY=sk-...
+
 MODEL=gpt-3.5-turbo
 
 
@@ -124,9 +127,13 @@ Qualify conversation input with fallback rules.
 Request:
 
 {
+
   "messages": [
+  
     {"role": "user", "content": "Hi, I need life insurance in CA. My budget is $120."}
+    
   ]
+  
 }
 
 
