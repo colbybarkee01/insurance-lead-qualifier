@@ -95,71 +95,40 @@ Qualifies conversation input with fallback rules.
     {"role": "user", "content": "Hi, I need life insurance in CA. My budget is $120."}
   ]
 }
-
-/chat
-
-Qualify conversation input with fallback rules.
-
-
-
-- Request:
-
-{
-
-  "messages": [
-  
-    {"role": "user", "content": "Hi, I need life insurance in CA. My budget is $120."}
-    
-   ]
-  
-}
-
-
-
-- Response:
+```
+**Response:**
+```json
 
 {"reply": "Got it — you're looking for life insurance in CA with a $120 budget."}
+```
 
-/extract
+### `/extract`  
+Extracts customer data + score + CRM JSON.
 
-Extract customer data + score + CRM JSON.
-
-
-
-- Request:
-
+**Request:**
+```json
 {"transcript": "I need life insurance. I'm 29, in CA. Budget is $120. Urgency 4. Provider is Acme."}
 
-
-
-- Response:
+```
+**Response:**
+```json
 
 {
-
   "customer_name": null,
-  
   "customer_age": 29,
- 
   "state_code": "CA",
- 
   "insurance_type": "life",
-  
   "current_provider": "Acme",
-  
   "monthly_budget": 120,
-  
   "priority_level": 4,
-  
   "lead_score": 7,
-  
   "crm_status": "sent",
-  
   "crm_note": "200"
-
 }
 
+```
 
-
+---
 
 ## 📊 Roadmap
 
@@ -171,7 +140,7 @@ Extract customer data + score + CRM JSON.
 
  - Deploy to Render/Fly.io with Docker
 
-
+---
 
 ## 💼 About / Portfolio Notes
 
