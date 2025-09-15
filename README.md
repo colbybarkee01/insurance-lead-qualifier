@@ -68,63 +68,10 @@ cp .env.example .env   # then add your OpenAI key
 # 5. Run server
 uvicorn app.main:app --reload
 
+👉 Docs available at: http://127.0.0.1:8000/docs
 
 
-
-
-
-
-
-
-⚙️ Setup & Run
-
-1. Clone the repository:
-
-git clone https://github.com/colbybarkee01/insurance-lead-qualifier.git
-cd insurance-lead-qualifier
-
-
-2. Create and activate a virtual environment:
-
-python -m venv .venv
-
-source .venv/bin/activate   # Mac/Linux
-
-.venv\Scripts\activate      # Windows
-
-
-
-
-3. Install dependencies:
-
-pip install -r requirements.txt
-
-
-
-
-4. Set up environment:
-
-cp .env.example .env
-
-
-
-5. Run the server:
-
-uvicorn app.main:app --reload
-
-
-
-
-
-6. Access interactive docs at:
-
-👉 http://127.0.0.1:8000/docs
-
-
-
-
-
-🔑 Environment Variables
+## 🔑 Environment Variables
 
 Create a .env file (copy from .env.example) and set:
 
@@ -135,7 +82,7 @@ MODEL=gpt-3.5-turbo
 
 
 
-📡 API Endpoints
+## 📡 API Endpoints
 
 /chat
 
@@ -202,7 +149,7 @@ Extract customer data + score + CRM JSON.
 
 
 
-📊 Roadmap
+## 📊 Roadmap
 
  - Add authentication (API key or JWT)
 
@@ -214,7 +161,7 @@ Extract customer data + score + CRM JSON.
 
 
 
-💼 About / Portfolio Notes
+## 💼 About / Portfolio Notes
 
 This project demonstrates practical AI-assisted automation in insurance sales:
 
@@ -238,7 +185,7 @@ This repo serves as a portfolio-ready demo showcasing:
 
 
 
-📜 License
+## 📜 License
 
 MIT License – free to use, modify, and share.
 
