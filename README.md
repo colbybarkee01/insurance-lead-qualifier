@@ -25,63 +25,6 @@ scores the lead, and returns structured JSON ready for a CRM.
 
 ## 📂 Project Structure
 insurance-lead-qualifier/
-│── app/
-│ ├── main.py # FastAPI app (chat + extract endpoints)
-│ ├── utils.py # Helper functions (qualifier, scoring, CRM post)
-│ └── models.py # Pydantic models
-│── requirements.txt # Dependencies
-│── README.md # Documentation
-│── .gitignore # Git ignore rules
-└── .env.example # Environment template
-
-
-
-
-
-
-
-
-
-
-
-
-🛡️ Insurance Lead Qualifier Bot (FastAPI)
-
-A conversational chatbot built with FastAPI that qualifies insurance leads in real time.
-It extracts customer information (age, state, insurance type, budget, provider, urgency), scores the lead, and returns structured JSON ready for a CRM.
-
-
-
-🚀 Features
-
-- Conversational FastAPI chatbot endpoint (/chat)
-
-- Information extraction endpoint (/extract)
-
-- Lead scoring heuristic (urgency + budget + coverage)
-
-- Outputs CRM-friendly JSON
-
-- Example webhook integration for CRM systems (HubSpot, Salesforce, etc.)
-
-
-
-🛠️ Tech Stack
-
-- Python 3.10+
-
-- FastAPI + Uvicorn
-
-- Pydantic for validation
-
-- OpenAI Chat Completions API
-
-
-
-📂 Project Structure
-
-insurance-lead-qualifier/
-
 │
 
 ├── app/
@@ -101,6 +44,35 @@ insurance-lead-qualifier/
 ├── .gitignore           # Git ignore rules
 
 └── .env.example         # Environment variable template
+
+
+---
+
+## ⚙️ Setup & Run
+```bash
+# 1. Clone repo
+git clone https://github.com/colbybarkee01/insurance-lead-qualifier.git
+cd insurance-lead-qualifier
+
+# 2. Create & activate virtual environment
+python -m venv .venv
+source .venv/bin/activate   # Mac/Linux
+.venv\Scripts\activate      # Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Set up environment
+cp .env.example .env   # then add your OpenAI key
+
+# 5. Run server
+uvicorn app.main:app --reload
+
+
+
+
+
+
 
 
 
