@@ -24,8 +24,15 @@ scores the lead, and returns structured JSON ready for a CRM.
 ---
 
 ## 📂 Project Structure
-
-
+insurance-lead-qualifier/
+│── app/
+│ ├── main.py # FastAPI app (chat + extract endpoints)
+│ ├── utils.py # Helper functions (qualifier, scoring, CRM post)
+│ └── models.py # Pydantic models
+│── requirements.txt # Dependencies
+│── README.md # Documentation
+│── .gitignore # Git ignore rules
+└── .env.example # Environment template
 
 
 
