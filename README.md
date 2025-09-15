@@ -1,3 +1,43 @@
+# 🛡️ Insurance Lead Qualifier Bot (FastAPI)
+
+A conversational chatbot built with **FastAPI** that qualifies insurance leads in real time.  
+It extracts customer info (age, state, insurance type, budget, provider, urgency),  
+scores the lead, and returns structured JSON ready for a CRM.
+
+---
+
+## 🚀 Features
+- Conversational chatbot endpoint (`/chat`)
+- Information extraction endpoint (`/extract`)
+- Lead scoring heuristic (urgency + budget + coverage)
+- Outputs CRM-friendly JSON
+- Example CRM webhook integration (HubSpot, Salesforce, etc.)
+
+---
+
+## 🛠 Tech Stack
+- Python 3.10+
+- FastAPI + Uvicorn
+- Pydantic for validation
+- OpenAI Chat Completions API
+
+---
+
+## 📂 Project Structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 🛡️ Insurance Lead Qualifier Bot (FastAPI)
 
 A conversational chatbot built with FastAPI that qualifies insurance leads in real time.
