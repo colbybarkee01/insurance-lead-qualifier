@@ -70,7 +70,8 @@ uvicorn app.main:app --reload
 
 👉 Docs available at: http://127.0.0.1:8000/docs
 
-'''
+```
+
 ---
 
 ## 🔑 Environment Variables
